@@ -27,10 +27,6 @@ clean:
 	rm -f go.mod
 	rm -f go.work
 
-build:
-	@echo "Building the project..."
-	go build -o bin/ ./...
-
 help:
 	@echo "Available commands:"
 	@echo "  make all    - Run fmt, vet, and test"
@@ -39,5 +35,4 @@ help:
 	@echo "  make test   - Run tests"
 	@echo "  make vet    - Run go vet"
 	@echo "  make clean  - Clean up build artifacts and modules"
-	@echo "  make build  - Build the project"
 	@echo "  make help   - Show this help message"
